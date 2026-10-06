@@ -18,7 +18,17 @@ require __DIR__ . '/data.php';
     </nav>
     </header>
     <main>
-    </main>
-    
+        <div class='fotball_box'><?php foreach($teams as $name => $team) { ?>
+        <article class='fotball_card'>
+            <h2><?= $name ?></h2>
+            <p><?= $team['league']?></p>
+            <p><?= $team['uefa-coefficient-ranking']?></p>
+            <p><?= $team['league-position']?></p>
+            <p><?= $team['city']?></p>
+            <p><?= $team['url']?></p>
+        </article>
+        <?php } ?>
+    </div>
+</main>
 </body>
 </html>
