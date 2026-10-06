@@ -1,0 +1,23 @@
+body {
+    background-color: #d7a275;
+}
+
+header {
+    padding: 20px 40px;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+nav a {
+    color: rgb(17, 20, 107);
+    text-decoration: underline;
+    font-weight: bold;
+}
