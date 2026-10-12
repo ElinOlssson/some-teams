@@ -36,7 +36,7 @@ $teams = [
         'league-position' => null,
         'city' => 'Sosnowiec',
         'url' => 'http://www.czarnisosnowiec.eu/',
-        'logo' => 'http://www.czarnisosnowiec.eu/images/logo.png', // HTTP only: blocked on HTTPS pages, use logo_uefa
+        'logo' => 'https://img.uefa.com/imgml/TP/teams/logos/240x240/2603340.png',
         'logo_uefa' => 'https://img.uefa.com/imgml/TP/teams/logos/240x240/2603340.png'
     ],
     'Fenerbahçe' => [
@@ -63,7 +63,7 @@ $teams = [
         'league-position' => 2,
         'city' => 'Frankfurt am Main',
         'url' => 'https://www.eintracht.de/',
-        'logo' => 'https://media.eintracht.de/image/upload/ar_3:2,c_fill,dpr_1.0,f_auto,g_xy_center,q_40,w_1100/sge_standard_logo_rgb-f66c.png', // CDN transform, padded 3:2 crop, may break
+        'logo' => 'https://img.uefa.com/imgml/TP/teams/logos/240x240/2611099.png',
         'logo_uefa' => 'https://img.uefa.com/imgml/TP/teams/logos/240x240/2611099.png'
     ],
     'Hammarby' => [
@@ -135,7 +135,7 @@ $teams = [
         'league-position' => 2,
         'city' => 'Torres Vedras',
         'url' => 'https://www.torreense.com/',
-        'logo' => 'https://www.torreense.com/images/logo.png',
+        'logo' => 'https://img.uefa.com/imgml/TP/teams/logos/240x240/2611345.png',
         'logo_uefa' => 'https://img.uefa.com/imgml/TP/teams/logos/240x240/2611345.png'
     ],
     'Wolfsburg' => [

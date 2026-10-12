@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  background-color: #F4D6C5;
+  background-color: #f4d6c5;
 }
 
 header {
@@ -64,15 +64,36 @@ nav a {
   box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
   width: 300px;
   height: 400px;
-  background-color: #FFF9F0;
+  background-color: #fff9f0;
 }
 
 .fotball_card p {
   display: none;
 }
 
-.fotball_card:hover p {
+.fotball_card a {
+  display: none;
+}
+
+.fotball_card:hover a {
   display: block;
+  color: #38302f;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.fotball_card:hover p {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 10px 0;
+    margin: 0;
+    border-bottom: 1px solid #ddd;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
 }
 
 .fotball_card img {
