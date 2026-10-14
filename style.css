@@ -7,30 +7,30 @@ html {
 }
 
 body {
+  margin: 0;
   background-color: #f4d6c5;
 }
 
+/* header: placerar rubrik och navigation bredvid varandra */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 140px;
-  margin-right: 140px;
-  margin-bottom: 100px;
-  padding-top: 30px;
-  font-size: 40px;
+  background-color: #fff9f0;
+  border-bottom: 3px solid #38302f;
+  padding: 45px 10%;
+  margin-bottom: 80px;
 }
 
-h1 {
+/* sidans huvudrubrik */
+header h1 {
+  color: #0a0a09;
   margin: 0;
-  text-decoration: underline;
-  text-decoration-thickness: 5px;
-  text-underline-offset: 8px;
-  font-family: "Isometra", serif;
-  font-weight: 400;
-  font-style: normal;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
 }
 
+/* placerar länkarna bredvid varandra */
 nav {
   display: flex;
   flex-direction: row-reverse;
@@ -38,65 +38,38 @@ nav {
   margin-top: 10px;
 }
 
+/* utseendet på länkarna i navigationen */
 nav a {
-  color: rgb(17, 20, 107);
+  color: #0d0c0b;
   text-decoration: underline;
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 20px;
 }
 
-.fotball_box {
+/* kortens placering/struktur */
+.card_structure {
   display: grid;
-  grid-template-columns: repeat(4, 300px);
+  grid-template-columns: repeat(4, 300px); 
   gap: 30px;
-  justify-content: center;
+  justify-content: center; 
 }
 
-.fotball_card {
+/* kortens utseende och placering för innehållet */
+.card_body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border: 4px solid #333;
   border-radius: 35px;
-  box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.3); 
   width: 300px;
   height: 400px;
   background-color: #fff9f0;
 }
 
-.fotball_card p {
-  display: none;
-}
-
-.fotball_card a {
-  display: none;
-}
-
-.fotball_card:hover a {
-  display: block;
-  color: #38302f;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
-.fotball_card:hover p {
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
-    padding: 10px 0;
-    margin: 0;
-    border-bottom: 1px solid #ddd;
-    font-family: "Poppins", sans-serif;
-    font-size: 13px;
-    font-weight: 600;
-}
-
-.fotball_card img {
+/* logotypens storlek och placering */
+.card_body img {
   display: block;
   min-width: 150px;
   max-width: 200px;
@@ -104,6 +77,68 @@ nav a {
   margin-top: 20px;
 }
 
-.fotball_card:hover img {
+/* baksidans information är dold från början */
+.card_background {
   display: none;
+  width: 85%;
+  color: #38302f;
+  font-family: "Poppins", sans-serif;
+}
+
+/* när man hovrar över kortet döljs logotypen */
+.card_body:hover img {
+  display: none;
+}
+
+/* när man hovrar över kortet visas informationen */
+.card_body:hover .card_background {
+  display: block;
+}
+
+/* varje informationsrad på baksidan*/
+.card_background p {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  gap: 10px;
+  padding: 12px 0; 
+  margin: 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 12px;
+}
+
+/* delar upp informationsraden till två layouts*/
+.card_background span {
+  font-weight: 400;
+}
+
+.card_background strong {
+  font-weight: 600;
+  text-align: right;
+}
+
+/* länken till lagets hemsida */
+.card_background a {
+  display: block;
+  background-color: #38302f;
+  color: white;
+  padding: 12px;
+  margin-top: 20px; 
+  border-radius: 15px;
+  text-align: center;
+  text-decoration: none; 
+  font-size: 14px;
+}
+
+/* rubrik på About-sidan */
+.head_about {
+  margin-left: 140px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+/* artikeltext på About-sidan */
+.article_about {
+  margin-left: 140px;
 }

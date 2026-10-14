@@ -1,22 +1,41 @@
-<?php 
+<?php
 require __DIR__ . '/data.php';
 require_once __DIR__ . '/header.php';
 ?>
 
 
-    <main>
-        <div class='fotball_box'><?php foreach($teams as $name => $team) { ?>
-        <article class='fotball_card'>
-            <h2><?= $name ?></h2>
-            <p>Team: <?= $team['league']?></p>
-            <p>Ranking: <?= $team['uefa-coefficient-ranking']?></p>
-            <p>Position: <?= $team['league-position']?></p>
-            <p>City: <?= $team['city']?></p>
-            <a href="<?= $team['url']?>">Teampage</a>
-            <img src="<?= $team['logo'] ?>" alt="<?= $name ?>">
-        </article>
-        <?php } ?>
+<main>
+    <div class='card_structure'><?php foreach ($teams as $name => $team) : ?>
+            <article class='card_body'>
+                <h2><?= $name ?></h2>
+                <img src="<?= $team['logo'] ?>" alt="<?= $name ?>">
+                <div class="card_background">
+                    <p>
+                        <span>Liga: </span>
+                        <strong><?= $team['league'] ?></strong>
+                    </p>
+
+                    <p>
+                        <span>Ranking: </span>
+                        <strong><?= $team['uefa-coefficient-ranking'] ?></strong>
+                    </p>
+
+                    <p>
+                        <span>Position: </span>
+                        <strong><?= $team['league-position'] ?></strong>
+                    </p>
+
+                    <p>
+                        <span>City: </span>
+                        <strong><?= $team['city'] ?></strong>
+                    </p>
+                    </br>
+                    <a href="<?= $team['url'] ?>">Teampage</a>
+                </div>
+            </article>
+        <?php endforeach ?>
     </div>
 </main>
 </body>
+
 </html>
